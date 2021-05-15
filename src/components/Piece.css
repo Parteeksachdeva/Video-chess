@@ -1,0 +1,11 @@
+.piece__img{
+    object-fit: contain;
+    height: 75%;
+}
+.piece{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

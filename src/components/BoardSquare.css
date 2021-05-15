@@ -1,0 +1,11 @@
+.BoardSquare{
+    display: flex;
+}
+.square{
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+}
+.green{
+    background-color: rgb(118,150,86);
+}
