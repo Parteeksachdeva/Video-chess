@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Piece from './Piece'
 import "./BoardSquare.css"
+import { getPosition } from './Game';
 function BoardSquare({row,rowIn}) {
+
   return (
     <div className="BoardSquare">
       {
@@ -9,7 +11,6 @@ function BoardSquare({row,rowIn}) {
           <div 
           className={`${rowIn%2===0 ? i%2!==0 && "green" : i%2===0 && "green"} square`}  
           key={i}
-          onDragOver={(e) => e.preventDefault()}
           >
             {value &&
             <Piece

@@ -11,21 +11,19 @@ function Piece({type,color,rowIn,colIn}) {
         const fromPos=getPosition(rowIn,colIn)
         setfromPosition(fromPos)
     }, [type,color,colIn,rowIn])
-    
-    const handleDragStart= (e, order)=> {
-        e.dataTransfer.setData('text/plain', order);
-      }
 
     return (
-        <div className="piece">
+        <div 
+        className="piece"
+        >
             <img src={image.default} 
             alt="" 
-            className={`piece__img ${fromPosition}`}
-            draggable={true}
-            onDragStart={(e) => handleDragStart(e,fromPosition)}
+            className={`piece__img`}
+            id={`${fromPosition}`}
             />
             {/* {fromPosition} */}
         </div>
+
     )
 }
 
