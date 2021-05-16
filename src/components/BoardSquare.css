@@ -2,8 +2,8 @@
     display: flex;
 }
 .square{
-    width: 70px;
-    height: 70px;
+    width: 61px;
+    height: 61px;
     border: 1px solid black;
 }
 .green{

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import BoardSquare from './BoardSquare'
 import "./Board.css"
 
-export default function Board({board}) {
+export default function Board({board,setBoard}) {
 
   console.log(board) 
   return (
@@ -13,6 +13,7 @@ export default function Board({board}) {
           key={i}
           row={value}
           rowIn={i}
+          setBoard={setBoard}
           />
         ))
       }

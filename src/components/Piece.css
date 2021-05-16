@@ -1,6 +1,6 @@
 .piece__img{
     object-fit: contain;
-    height: 75%;
+    height: 85%;
 }
 .piece{
     display: flex;
@@ -8,4 +8,8 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    cursor: grab
+}
+.piece:active{
+    cursor: grabbing;
 }

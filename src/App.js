@@ -13,7 +13,10 @@ function App() {
   
   return (
     <div className="app">
-      <Board board={board}/>
+      <Board 
+      board={board}
+      setBoard={setBoard}
+      />
     </div>
   )
 }

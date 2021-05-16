@@ -12,14 +12,23 @@ function Piece({type,color,rowIn,colIn}) {
         setfromPosition(fromPos)
     }, [type,color,colIn,rowIn])
 
+
+  const handleDragStart= (e)=>{
+    e.dataTransfer.setData("text/html", e.target.id);
+  }
+
     return (
         <div 
         className="piece"
+        draggable={true} 
+        onDragStart={(e) => handleDragStart(e)}
         >
             <img src={image.default} 
             alt="" 
             className={`piece__img`}
             id={`${fromPosition}`}
+            
+            
             />
             {/* {fromPosition} */}
         </div>
